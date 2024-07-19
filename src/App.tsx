@@ -95,24 +95,24 @@ const App: React.FC = () => {
             ICML 2024 (Poster)
           </Heading>
           <Grid
-            templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)',  'repeat(3, 1fr)']}
+            templateColumns={{ base: "1fr", md: "auto auto auto" }}
             gap={{ base: "5", md: "30" }}
             mt={2}
           >
             <Link href="#" isExternal>
-              <Tag size="lg" colorScheme="blue" borderRadius="full">
+              <Tag size="lg" colorScheme="blue" borderRadius="full" width={{ base: "100%", md: "auto" }}>
                 <TagLeftIcon boxSize="16px" as={FaGithub} />
-                <TagLabel>Code (soon)</TagLabel>
+                <TagLabel>Code (to be released)</TagLabel>
               </Tag>
             </Link>
             <Link href="#" isExternal>
-              <Tag size="lg" colorScheme="green" borderRadius="full">
+              <Tag size="lg" colorScheme="green" borderRadius="full" width={{ base: "100%", md: "auto" }}>
                 <TagLeftIcon boxSize="16px" as={FaFilePdf} />
                 <TagLabel>Poster</TagLabel>
               </Tag>
             </Link>
             <Link href="https://icml.cc/virtual/2024/poster/32673" isExternal>
-              <Tag size="lg" colorScheme="red" borderRadius="full">
+              <Tag size="lg" colorScheme="red" borderRadius="full" width={{ base: "100%", md: "auto" }}>
                 <TagLeftIcon boxSize="16px" as={FaExternalLinkAlt} />
                 <TagLabel>Paper</TagLabel>
               </Tag>
