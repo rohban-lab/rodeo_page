@@ -55,7 +55,7 @@ const App: React.FC = () => {
       <Container maxW={{base:"95%", md:"80%", lg:"70%"}} bgColor="white">
         <VStack spacing={4} alignItems="center">
           <Heading as="h1" fontFamily="Times New Roman" size="xl" textAlign="center">
-            RODEO: Robust Outlier Detection via Exposing Adaptive Outliers
+            RODEO: Robust Outlier Detection via Exposing Adaptive Out-of-Distribution Samples
           </Heading>
           <FadingSeparator/>
           <Grid
@@ -95,26 +95,26 @@ const App: React.FC = () => {
             ICML 2024 (Poster)
           </Heading>
           <Grid
-            templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(3, 1fr)']}
+            templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)',  'repeat(3, 1fr)']}
             gap={{ base: "5", md: "30" }}
             mt={2}
           >
-            <Link href="https://github.com" isExternal>
+            <Link href="#" isExternal>
               <Tag size="lg" colorScheme="blue" borderRadius="full">
                 <TagLeftIcon boxSize="16px" as={FaGithub} />
-                <TagLabel>Code</TagLabel>
+                <TagLabel>Code (soon)</TagLabel>
               </Tag>
             </Link>
-            <Link href="https://example.com/poster.pdf" isExternal>
+            <Link href="#" isExternal>
               <Tag size="lg" colorScheme="green" borderRadius="full">
                 <TagLeftIcon boxSize="16px" as={FaFilePdf} />
                 <TagLabel>Poster</TagLabel>
               </Tag>
             </Link>
-            <Link href="https://arxiv.org" isExternal>
+            <Link href="https://icml.cc/virtual/2024/poster/32673" isExternal>
               <Tag size="lg" colorScheme="red" borderRadius="full">
                 <TagLeftIcon boxSize="16px" as={FaExternalLinkAlt} />
-                <TagLabel>ArXiv</TagLabel>
+                <TagLabel>Paper</TagLabel>
               </Tag>
             </Link>
           </Grid>
