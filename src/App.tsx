@@ -99,10 +99,10 @@ const App: React.FC = () => {
             gap={{ base: "5", md: "30" }}
             mt={2}
           >
-            <Link href="#" isExternal>
+            <Link href="https://github.com/hamiddeboo8/RODEO" isExternal>
               <Tag size="lg" colorScheme="blue" borderRadius="full" width={{ base: "100%", md: "auto" }}>
                 <TagLeftIcon boxSize="16px" as={FaGithub} />
-                <TagLabel>Code (to be released)</TagLabel>
+                <TagLabel>Code</TagLabel>
               </Tag>
             </Link>
             <Link href="#" isExternal>
